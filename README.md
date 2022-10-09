@@ -1,4 +1,4 @@
-```Everyone must go through CONTRINUTING.md before contributing to this repository```
+```Everyone must go through CONTRINUTING.md before contributing to this project```
 
 # Contents of the website
 
