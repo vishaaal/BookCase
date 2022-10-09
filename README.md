@@ -1,5 +1,3 @@
-```Everyone must go through CONTRINUTING.md before contributing to this project```
-
 # Contents of the website
 
 1. index.html - Contains the content of the home page.
