@@ -6,7 +6,7 @@ Contributing guidelines are as follows:
 3. Create a new branch using the command - `git branch [branch-name]`
 4. Move to newly created branch using the command - `git checkout [branch-name]`
 5. Add a card with the image of your favourite Book, a small description of it, and mention your GitHub profile name in the button
-You can find image by searching ```[Book-name] cover``` on Google
+<br>*You can find image by searching ```[Book-name] cover``` on Google*
 6. Add your changes using the command - `git add -A`
 7. Commit your changes using the command - `git commit -m "your commit message"`
 8. Push your committed changes using the command - `git push origin [branch-name]`
