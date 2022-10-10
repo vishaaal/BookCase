@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" />
   <link rel="stylesheet" href="index.css" />
   <script defer src="./js/typewriterEffect.js"></script>
+  <script defer src="./js/bookSearch.js"></script>
   <title>BookCase</title>
 </head>
 
@@ -60,10 +61,24 @@
     </h1>
   </div>
   
- <div>
+  <div>
       <p class="lead">We all love Books, don't we? Go ahead and share your favourite with us!</p>
       <!-- <a href="#gallery-title"><i class="fas fa-chevron-down fa-6x gallery-icon" id="icon1"></i></a> -->
     </div>
+
+    <!-- Search Bar start -->
+      <div class="input-group">
+        <div class="form-outline">
+          <input id="search-input" 
+          type="search" 
+          class="form-control" 
+          placeholder="Search by book title" 
+          onkeyup="if (event.keyCode == 13) { titleSearch(); return false; }"/>
+          <!-- keyCode 13 is Enter key here -->
+          <span id="search-result"></span>
+        </div>
+      </div>
+    <!-- Search Bar end -->
 
   <section id="gallery">
     <div class="container">
@@ -318,21 +333,22 @@
         </div>
 
 
-<div class="col-lg-4 mb-4">
-  <div class="card">
-    <img class="card-img-top" src="https://m.media-amazon.com/images/I/51ObA75bY9L._SX332_BO1,204,203,200_.jpg" alt="Mindset" />
-    <div class="card-body">
-      <h5 class="card-title">The Art and Science of Personality Development </h5>
-      <p class="card-text">Drawing on state-of-the-art personality and developmental research, this book presents a new and broadly integrative theory of how people come to be who they are over the life course. </p>
-      <a
-        href="https://github.com/anjali6387"
-        class="btn btn-outline-danger btn-sm"
-        >Contributed by - Anjali Gupta</a
-      >
-    </div>
-  </div>
-</div>
- <div class="col-lg-4 mb-4">
+      <div class="col-lg-4 mb-4">
+        <div class="card">
+          <img class="card-img-top" src="https://m.media-amazon.com/images/I/51ObA75bY9L._SX332_BO1,204,203,200_.jpg" alt="Mindset" />
+          <div class="card-body">
+            <h5 class="card-title">The Art and Science of Personality Development </h5>
+            <p class="card-text">Drawing on state-of-the-art personality and developmental research, this book presents a new and broadly integrative theory of how people come to be who they are over the life course. </p>
+            <a
+              href="https://github.com/anjali6387"
+              class="btn btn-outline-danger btn-sm"
+              >Contributed by - Anjali Gupta</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 mb-4">
           <div class="card">
             <img class="card-img-top" src="https://m.media-amazon.com/images/P/B00JW44IAI.01._SCLZZZZZZZ_SX500_.jpg" alt="" />
             <div class="card-body">
@@ -345,6 +361,17 @@
           </div>
         </div>
 
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img alt="And the Mountains Echoed" class="card-img-top" src="https://m.media-amazon.com/images/I/41lQDRWYdvL.jpg">
+            <div class="card-body">
+              <h5 class="card-title">And the Mountains Echoed</h5>
+              <p class="card-text">Third in the series of some fantastic piece of writing by Hosseini, this book traces the journeys of a brother and sister through years. A story of love, separation, friendship, compassion, exile, memory and the troubled history of Afghanistan, spanning three continents and 60 years</p>
+              <a href="https://github.com/Sourabh06" class="btn btn-outline-danger btn-sm">Contributed by -
+                Sourabh</a>
+            </div>
+          </div>
+        </div>
 
 
         <!--Ends here-->
