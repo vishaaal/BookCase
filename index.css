@@ -238,4 +238,48 @@ title {
 .card-title {
   color: #94000f;
 }
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap');
+
+
+html{
+    height: 100%;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+footer{
+    background-color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 30px;
+    margin-top: auto;
+}
+
+footer li{
+    list-style: none;
+    margin: 10px;
+    display: inline-block;
+}
+
+
+.footer-copyright{
+    background-color:#000000;
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+    text-transform: capitalize;
+}
+
+.footer-copyright p{
+    margin-bottom: 0px;
+}
 
