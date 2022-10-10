@@ -6,10 +6,10 @@ body {
   font-family: "Righteous", cursive;
 }
 head {
-    color: #dddddd;
+  color: #dddddd;
 }
-title{
-    color: #dddddd;
+title {
+  color: #dddddd;
 }
 
 #header {
@@ -25,11 +25,11 @@ title{
 }
 
 /* scale-animation-by-sudo-nick16 */
-.card{
+.card {
   transition: transform 0.2s;
 }
 .card:hover {
-  transform: scale(1.05)
+  transform: scale(1.05);
 }
 
 .backToTop {
@@ -120,6 +120,22 @@ title{
 .view-button.selected {
   outline: 1px solid black;
 }
+
+.cursor {
+  border-right: 4px solid rgba(255, 255, 255, 0.75);
+  animation: blink 1000ms ease-in infinite;
+}
+
+@keyframes blink {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+
+  to {
+    border-right-color: rgba(255, 255, 255, 0);
+  }
+}
+
 @media (max-width: 320px) {
   .lead {
     margin-top: 60%;
