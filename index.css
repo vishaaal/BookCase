@@ -213,3 +213,7 @@ title {
     font-size: 6rem;
   }
 }
+
+.card-title {
+  color: blue;
+}
