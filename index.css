@@ -1,14 +1,18 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   color: black;
+  background-color: #c2b8b8;
   font-family: "Righteous", cursive;
   cursor: url(https://cur.cursors-4u.net/user/use-1/use30.cur), auto !important;
 }
+
 head {
   color: #dddddd;
 }
+
 title {
   color: #dddddd;
 }
@@ -29,33 +33,39 @@ title {
 .card {
   transition: transform 0.2s;
 }
+
 .card:hover {
   transform: scale(1.05);
 }
 
 .backToTop {
-  margin-left: 49%;
+  margin-left: 95%;
 
   color: #000000;
   padding: 0.6%;
   border-radius: 50%;
   margin-bottom: 4%;
 }
+
 .card {
   height: 100%;
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
 }
+
 .card-body.hidden {
   display: none;
 }
+
 .card-img-top {
   padding: 2rem;
 }
+
 .display-3 {
   font-size: 8rem;
 }
+
 .fas fa-chevron-down fa-6x gallery-icon {
   padding-top: 100px;
 }
@@ -67,39 +77,48 @@ title {
   margin-bottom: 0px;
   text-transform: uppercase;
 }
+
 .gallery-icon {
   color: #000000;
   text-align: center;
 }
+
 .itemNav {
   padding: 15px;
 }
+
 .jumbotron {
   border-radius: 0;
 }
+
 .lead {
   font-size: 1.5rem;
   text-align: center;
   margin-bottom: 10%;
 }
+
 .navbar {
   background-color: black;
   color: white;
 }
-.navbar ~ * {
+
+.navbar~* {
   position: relative;
   top: 4.45rem;
 }
+
 .navTitle {
   color: #ffffff;
   padding-left: 50px;
   size: 50px;
 }
+
 .view-div {
   display: flex;
   justify-content: center;
   margin-bottom: 100px;
 }
+
 .view-button {
   width: 130px;
   height: 50px;
@@ -112,13 +131,16 @@ title {
   align-items: center;
   justify-content: space-around;
 }
-.view-button > img {
+
+.view-button>img {
   width: 24px;
   height: 24px;
 }
+
 .view-button:hover {
   cursor: pointer;
 }
+
 .view-button.selected {
   outline: 1px solid black;
 }
@@ -142,12 +164,15 @@ title {
   .lead {
     margin-top: 60%;
   }
+
   #header {
     width: 510px;
   }
+
   #icon1 {
     margin-top: -6%;
   }
+
   #gallery1 {
     font-size: 1.5rem;
 
@@ -155,32 +180,39 @@ title {
     margin-left: 50%;
     text-transform: uppercase;
   }
+
   #normal-view {
     margin-left: 50%;
   }
 }
+
 @media (min-width: 321px) and (max-width: 449px) {
   .lead {
     margin-top: 50%;
   }
+
   #header {
     width: 500px;
   }
+
   #gallery1,
   #normal-view {
     margin-left: 20%;
   }
 }
+
 @media (min-width: 449px) and (max-width: 750px) {
   #header {
     width: 100%;
   }
 }
+
 @media (min-width: 760px) {
   #header {
     width: 100%;
   }
 }
+
 @media (min-width: 800px) and (max-width: 1440px) {
   #header {
     width: 100%;
@@ -191,9 +223,11 @@ title {
   .display-3 {
     font-size: 4rem;
   }
+
   .gallery-head {
     font-size: 2rem;
   }
+
   .navTitle {
     padding-left: 3px;
   }
@@ -203,7 +237,8 @@ title {
   #header {
     height: calc(100vh - 4.45rem - 15px);
   }
-  .navbar ~ * {
+
+  .navbar~* {
     top: calc(4.45rem + 15px);
   }
 }
@@ -217,4 +252,90 @@ title {
 
 .card-title {
   color: #94000f;
+}
+
+.footer-basic {
+  margin-top: 10px;
+  margin-bottom: auto;
+  align-items: center;
+  width: 100%;
+  padding: 30px 0;
+  float: left;
+  background-color: #000000;
+  color: #4b4c4d;
+}
+
+.footer-basic ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: auto;
+}
+
+.footer-basic li {
+  padding: 0 10px;
+}
+
+.footer-basic ul a {
+  color: white;
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+.footer-basic ul a:hover {
+  opacity: 1;
+}
+
+.footer-basic .social {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.footer-basic .social>a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid rgb(255, 255, 255);
+  margin: 0 8px;
+  color: white;
+  opacity: 0.75;
+}
+
+.ion-social-instagram {
+  color: #da0d8b;
+}
+
+.ion-social-snapchat {
+  color: #ffe449;
+}
+
+.ion-social-twitter {
+  color: rgb(8, 123, 168);
+}
+
+.ion-social-facebook {
+  color: blue;
+}
+
+.footer-basic .social>a:hover {
+  opacity: 1;
+}
+
+.list-inline .list-inline-item {
+  color: white;
+}
+
+.footer-basic .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 16px;
+  color: whitesmoke;
+  margin-bottom: 0;
 }
