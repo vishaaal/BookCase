@@ -219,3 +219,16 @@ title {
   color: #94000f;
 }
 
+.fa-heart-o {
+  color: red;
+  cursor: pointer;
+  padding-left: 4px;
+  font-size:x-large;
+}
+
+.fa-heart {
+  color: red;
+  cursor: pointer;
+  padding-left: 4px;
+  font-size:x-large;
+}
