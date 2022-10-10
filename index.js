@@ -1,3 +1,18 @@
+hearts = document.querySelectorAll('#heart');
+hearts.forEach(heart => {
+    heart.addEventListener('click', (event)=> {
+        console.log(heart);
+        event.preventDefault();
+        if(heart.classList.contains('liked')){
+            heart.innerHTML = '<i class="fa fa-heart-o" aria-hidden="true"></i>'
+            heart.classList.remove('liked')
+        }
+        else{
+            heart.innerHTML = '<i class="fa fa-heart" aria-hidden="true"></i>'
+            heart.classList.add('liked')
+        }
+    })
+})
 const setNormalView = isNormalView => {
     if (isNormalView) {
       document.querySelector('#normal-view').classList.add('selected');
@@ -33,7 +48,6 @@ const setNormalView = isNormalView => {
   document.querySelector('#compact-view').addEventListener('mousedown', () => {
     setNormalView(false);
   });
-  
   const fixBrokenImages = () => {
       const fallbackURL = 'images/fallback_image.png'
       const img = document.getElementsByTagName('img');
