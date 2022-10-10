@@ -58,6 +58,17 @@
     <h1 class="gallery-head" id="gallery1">
       Book Gallery
     </h1>
+    <div class="input-group search-bar">
+      <div class="form-outline" style="margin: auto;">
+        <form id="search-form" style="display: flex; margin: auto;">
+          <input type="search" id="search-bar" class="form-control" placeholder="search" />
+          <!-- <label class="form-label" for="search-bar">Search</label> -->
+          <button type="submit" class="btn btn-primary search-button" id="search-button">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </div>
+    </div>
   </div>
 
   <div>
@@ -551,8 +562,14 @@
     $('.navbar-nav>li>a').on('click', function () {
       $('.navbar-collapse').collapse('hide');
     });
+
+
+    document.querySelector("form#search-form").addEventListener("submit", (e) => {
+      e.preventDefault();
+    search(document.querySelector("#search-bar").value||"");
+  });
   </script>
-  <script src="/index.js">
+  <script src="/index.js" defer>
   </script>
 
 
