@@ -1,0 +1,62 @@
+# Written by @Manethpak
+
+name: 🐛 Bug Report
+description: Problems and issues with the project.
+title: 'Bug Report: '
+labels: ['type: bug']
+body:
+  - type: markdown
+    attributes:
+      value: 'Please provide a summary of the issue in the title above ⬆️.'
+
+  - type: textarea
+    attributes:
+      label: What happened ton the books? 😣
+      description: Please provide as much information as possible regarding the problem with book.
+      placeholder: >
+        Please provide the context in which the problem occur, along with a video or screenshot if possible, it will be extremely helpful.
+    validations:
+
+  - type: textarea
+    attributes:
+      label: What happened ton the authors? 😣
+      description: Please provide as much information as possible regarding the problem with author.
+      placeholder: >
+        Please provide the context in which the problem occur, along with a video or screenshot if possible, it will be extremely helpful.
+    validations:
+
+  - type: textarea
+    attributes:
+      label: What expected to happen 🤔
+      description: What do you think went wrong?
+      placeholder: >
+        Please explain why you think the behaviour is wrong.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Step to reproduce 👣
+      description: >
+        What should we do to reproduce the problem?
+      placeholder: >
+        Please provide a reproducible step-by-step case of how to reproduce the problem as minimally and precisely as possible.
+    validations:
+      required: true
+
+  - type: dropdown
+    attributes:
+      label: Are you willing to fix the bug? 🥺
+      description:
+      multiple: true
+      options:
+        - "Yes, I'm willing to fix the bug"
+        - "No, I'm just reporting the bug"
+
+  - type: markdown
+    attributes:
+      value: <br>
+
+  - type: markdown
+    attributes:
+      value: By submitting this issue I agree to follow this project's [Code of Conduct]()
