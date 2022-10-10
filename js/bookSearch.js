@@ -8,6 +8,7 @@ const titleSearch = () => {
     // Don't search for null string
     if(searchInput.value == "") {
         toDisplay.textContent = "";
+        displayAllCards();
         return;
     }
     let pos = [];
@@ -41,4 +42,10 @@ const displaySelectedCards = (pos) => {
             cardDivs[pos[i]].style.display = "block";
     }
 
+}
+
+const displayAllCards = () => {
+    for (i=0; i<cardDivs.length; i++){
+        cardDivs[i].style.display = "block";
+    }
 }
