@@ -239,3 +239,14 @@ title {
   color: #94000f;
 }
 
+.input-group {
+  display: flex !important;
+  place-items: flex-end !important;
+  align-content: space-around !important;
+  flex-direction: column !important;
+  padding-bottom: 1.1em;
+}
+
+#search-result {
+  font-style: italic;
+}
