@@ -250,3 +250,35 @@ title {
 #search-result {
   font-style: italic;
 }
+
+.footer{
+  /* background: rgb(168, 160, 160); */
+  background: black;
+  color: #ffffff;
+  line-height: 2.2rem;
+  text-align: center;
+  height: 2rem;
+  text-transform: capitalize;
+}
+
+.footer .fa-linkedin-square,
+.footer .fa-twitter{
+  position: absolute;
+  left: 2rem;
+  bottom: 0.3rem;
+  font-size: 1.5rem;
+  line-height: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* top: 2rem; */
+}
+
+.footer .fa-twitter{
+  left: 4rem;
+}
+
+.copy{
+  position: absolute;
+  right: 2rem;
+}
