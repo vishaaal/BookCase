@@ -46,4 +46,8 @@ const setNormalView = isNormalView => {
   };
   
   window.onload = fixBrokenImages;
+
+  $('.navbar-nav>li>a').on('click', function () {
+    $('.navbar-collapse').collapse('hide');
+  });
   
