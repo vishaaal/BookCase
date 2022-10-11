@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" />
   <link rel="stylesheet" href="index.css" />
   <script defer src="./js/typewriterEffect.js"></script>
+  <script defer src="./js/bookSearch.js"></script>
   <title>BookCase</title>
 </head>
 
@@ -64,6 +65,20 @@
     <p class="lead">We all love Books, don't we? Go ahead and share your favourite with us!</p>
     <!-- <a href="#gallery-title"><i class="fas fa-chevron-down fa-6x gallery-icon" id="icon1"></i></a> -->
   </div>
+
+    <!-- Search Bar start -->
+      <div class="input-group">
+        <div class="form-outline">
+          <input id="search-input" 
+          type="search" 
+          class="form-control" 
+          placeholder="Search by book title" 
+          onkeyup="if (event.keyCode == 13) { titleSearch(); return false; }"/>
+          <!-- keyCode 13 is Enter key here -->
+          <span id="search-result"></span>
+        </div>
+      </div>
+    <!-- Search Bar end -->
 
   <section id="gallery">
     <div class="container">
@@ -469,6 +484,17 @@
         </div>
         <div class="col-lg-4 mb-4">
           <div class="card">
+            <img alt="And the Mountains Echoed" class="card-img-top" src="https://m.media-amazon.com/images/I/41lQDRWYdvL.jpg">
+            <div class="card-body">
+              <h5 class="card-title">And the Mountains Echoed</h5>
+              <p class="card-text">Third in the series of some fantastic piece of writing by Hosseini, this book traces the journeys of a brother and sister through years. A story of love, separation, friendship, compassion, exile, memory and the troubled history of Afghanistan, spanning three continents and 60 years</p>
+              <a href="https://github.com/Sourabh06" class="btn btn-outline-danger btn-sm">Contributed by -
+                Sourabh</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card">
             <img class="card-img-top"
               src="https://rukminim1.flixcart.com/image/416/416/kqidx8w0/book/i/7/a/the-adventures-of-sherlock-holmes-original-imag4gdrp8gnz7vw.jpeg?q=70"
               alt="The Complete Adventures of Sherlock Holmes" />
@@ -513,6 +539,21 @@
             </div>
           </div>
         </div>
+        
+        
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img class="card-img-top" src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/content/Fire_Blood_small.jpeg" alt="" />
+            <div class="card-body">
+              <h5 class="card-title">Fire and Blood</h5>
+              <p class="card-text">Fire and Blood focuses on the history of the Targaryen family from 300 years before the setting of the first GOT book. They are the first family after Westeros was united and brought under one ruler. We follow the rise and the fall of the family that set up the foundation for the rest of Westeros.</p>
+              <a
+                href="https://github.com/Op-panda"
+                class="btn btn-outline-danger btn-sm"
+                >Contributed by - Amit Pandey</a>
+                </div>
+          </div>
+        </div>
        
        
         <div class="col-lg-4 mb-4">
@@ -525,13 +566,10 @@
               <a
                 href="https://github.com/Happy2411"
                 class="btn btn-outline-danger btn-sm"
-                >Contributed by - Happy Singh</a
-              >
+                >Contributed by - Happy Singh</a>
             </div>
           </div>
         </div>
-
-
 
         <div class="col-lg-4 mb-4">
           <div class="card">
@@ -573,6 +611,20 @@
             </div>
           </div>
         </div>
+        
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img class="card-img-top" src="https://m.media-amazon.com/images/I/41SxL78DpvL.jpg" alt="" />
+            <div class="card-body">
+              <h5 class="card-title">21 lessons for the 21st century</h5>
+              <p class="card-text">In a world deluged by irrelevant information, clarity is power. Censorship works not by blocking the flow of information, but rather by flooding people with disinformation and distractions. 21 Lessons for the 21st Century cuts through these muddy waters and confronts some of the most urgent questions on today’s global agenda.</p>
+              <a href="" class="btn btn-outline-danger btn-sm">
+              Contributed by - Keshav</a>
+          </div>
+         </div>
+       </div>
+
+
 
 
         <div class="col-lg-4 mb-4">
@@ -581,12 +633,46 @@
               src="https://m.media-amazon.com/images/I/51kQWMG+ZzL.jpg">
             <div class="card-body">
               <h5 class="card-title">The Code Book: The Science of Secrecy from Ancient Egypt to Quantum Cryptography</h5>
-              <p class="card-text">In his first book since the bestselling Fermat's Enigma, Simon Singh offers the first sweeping history of encryption, tracing its evolution and revealing the dramatic effects codes have had on wars, nations, and individual lives. From Mary, Queen of Scots, trapped by her own code, to the Navajo Code Talkers who helped the Allies win World War II, to the incredible (and incredibly simple) logisitical breakthrough that made Internet commerce secure, The Code Book tells the story of the most powerful intellectual weapon ever known: secrecy.Throughout the text are clear technical and mathematical explanations, and portraits of the remarkable personalities who wrote and broke the world's most difficult codes. Accessible, compelling, and remarkably far-reaching, this book will forever alter your view of history and what drives it.  It will also make you wonder how private that e-mail you just sent really is.</p>
+              <p class="card-text">In his first book since the bestselling Fermat's Enigma, Simon Singh offers the first sweeping history of encryption, tracing its evolution and revealing the dramatic effects codes have had on wars, nations, and individual lives.</p>
               <a href="https://github.com/mnaiwrit52" class="btn btn-outline-danger btn-sm">Contributed by -
                 Naiwrit Mullick</a>
             </div>
           </div>
         </div>
+
+      
+         <div class="col-lg-4 mb-4"></div>
+          <div class="card">
+            <img alt="The Code Book" class="card-img-top"
+              src="https://m.media-amazon.com/images/I/51kQWMG+ZzL.jpg">
+            <div class="card-body">
+              <h5 class="card-title">The Man Who Knew Too Much: A Detective, his unorthodox ways to solve mysterious crimes and a tussle between Justice and his family</h5>
+              <p class="card-text">The Man Who Knew Too Much is a humorous story set in an army training camp. It highlights the attitude of one of the trainees at the camp, Private Quelch, who has a habit of showing off his knowledge in an attempt to outshine the other trainees in his batch.</p>
+              <a href="https://github.com/AmanAssassin" class="btn btn-outline-danger btn-sm">Contributed by -
+                Aman Maurya</a>
+            </div>
+          </div>
+        </div>  
+
+        
+
+<div class="col-lg-4 mb-4">
+  <div class="card">
+    <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/en/3/3a/Wings_of_Fire_by_A_P_J_Abdul_Kalam_Book_Cover.jpg" alt="" />
+    <div class="card-body">
+      <h5 class="card-title">Wings of Fire</h5>
+      <p class="card-text">[</p>
+      <a
+        href="https://github.com/Op-panda"
+        class="btn btn-outline-danger btn-sm"
+        >Contributed by - Amit Pandey</a
+      >
+    </div>
+  </div>
+</div>
+        
+        
+        
       
       <div class="col-lg-4 mb-4">
           <div class="card">
@@ -627,7 +713,7 @@
             </div>
           </div>
         </div>
-
+        
         <div class="col-lg-4 mb-4">
           <div class="card">
              <img class="card-img-top" src="https://www.thebalancemoney.com/thmb/1HhzEc1HTgk_1cUE9w1MX769tvU=/2250x0/filters:no_upscale():max_bytes(150000):strip_icc()/Webp.net-resizeimage12-b9cd8d74bcef401cb591813dafefd583.jpg" alt="life mitra book"/>
@@ -638,8 +724,6 @@
              </div>
            </div>
          </div>
- 
-
         <!--Ends here-->
       </div>
     </div>
