@@ -12,6 +12,18 @@ head {
 title {
   color: #dddddd;
 }
+#loading {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  opacity: 0.8;
+  background-color: #fff;
+  z-index: 99;
+}
 
 #header {
   background: url("https://images.pexels.com/photos/694740/pexels-photo-694740.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
