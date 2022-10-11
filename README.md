@@ -9,7 +9,7 @@
 
 # What can I contribute?
 
-1. Raise an issue.
+1. Raise an issue or go through the given issues.
 2. Only features and bugs related to the website can be created as an issue.
 3. Won't be accepting books anymore.
 
