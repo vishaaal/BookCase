@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" />
   <link rel="stylesheet" href="index.css" />
   <script defer src="./js/typewriterEffect.js"></script>
+  <script defer src="./js/bookSearch.js"></script>
   <title>BookCase</title>
 </head>
 
@@ -64,6 +65,20 @@
     <p class="lead">We all love Books, don't we? Go ahead and share your favourite with us!</p>
     <!-- <a href="#gallery-title"><i class="fas fa-chevron-down fa-6x gallery-icon" id="icon1"></i></a> -->
   </div>
+
+    <!-- Search Bar start -->
+      <div class="input-group">
+        <div class="form-outline">
+          <input id="search-input" 
+          type="search" 
+          class="form-control" 
+          placeholder="Search by book title" 
+          onkeyup="if (event.keyCode == 13) { titleSearch(); return false; }"/>
+          <!-- keyCode 13 is Enter key here -->
+          <span id="search-result"></span>
+        </div>
+      </div>
+    <!-- Search Bar end -->
 
   <section id="gallery">
     <div class="container">
@@ -464,6 +479,17 @@
                 and relatable guide, The Rudest Book Ever will make you rethink everything you? ve been taught.</p>
               <a href="https://github.com/AdityaMore7000" class="btn btn-outline-danger btn-sm">Contributed by -
                 AdityaMore7000</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img alt="And the Mountains Echoed" class="card-img-top" src="https://m.media-amazon.com/images/I/41lQDRWYdvL.jpg">
+            <div class="card-body">
+              <h5 class="card-title">And the Mountains Echoed</h5>
+              <p class="card-text">Third in the series of some fantastic piece of writing by Hosseini, this book traces the journeys of a brother and sister through years. A story of love, separation, friendship, compassion, exile, memory and the troubled history of Afghanistan, spanning three continents and 60 years</p>
+              <a href="https://github.com/Sourabh06" class="btn btn-outline-danger btn-sm">Contributed by -
+                Sourabh</a>
             </div>
           </div>
         </div>
