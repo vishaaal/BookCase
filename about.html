@@ -24,6 +24,15 @@
     <title>About</title>
   </head>
   <body>
+    <div id="loading">
+      <img
+        id="loading-image"
+        width="100%"
+        height="100%"
+        src="https://cdn.dribbble.com/users/149180/screenshots/3208433/media/69be039cf606f6fe7ad8d1975306814e.gif"
+        alt="Loading..."
+      />
+    </div>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <a class="navbar-brand navTitle" href="index.html">
         <i class="fas fa-desktop mr-2"></i>
@@ -59,9 +68,7 @@
         <b>This project is developed by Vishal Kumar</b>
       </h1>
       <div id="para">
-        <p>
-          Hey! I'm a third year Computer Science Engineering student.
-        </p>
+        <p>Hey! I'm a third year Computer Science Engineering student.</p>
         <p>
           I created this project as a starter repository for Hacktoberfest 2022
           in order to help first-time participants in learning how to make their
@@ -119,9 +126,13 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
+    <script src="/index.js"></script>
     <script>
-      $('.navbar-nav>li>a').on('click', function() {
-        $('.navbar-collapse').collapse('hide');
+      $(".navbar-nav>li>a").on("click", function () {
+        $(".navbar-collapse").collapse("hide");
+      });
+      $(window).on("load", function () {
+        $("#loading").hide();
       });
     </script>
   </body>

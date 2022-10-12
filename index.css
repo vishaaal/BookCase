@@ -12,6 +12,18 @@ head {
 title {
   color: #dddddd;
 }
+#loading {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  opacity: 0.8;
+  background-color: #fff;
+  z-index: 99;
+}
 
 #header {
   background: url("https://images.pexels.com/photos/694740/pexels-photo-694740.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
@@ -239,3 +251,55 @@ title {
   color: #94000f;
 }
 
+.input-group {
+  display: flex !important;
+  place-items: flex-end !important;
+  align-content: space-around !important;
+  flex-direction: column !important;
+  padding-bottom: 1.1em;
+}
+
+#search-result {
+  font-style: italic;
+}
+
+.footer{
+  /* background: rgb(168, 160, 160); */
+  position: fixed;
+  left: 0;
+  bottom: -12px;
+  width: 100%;
+  background: black;
+  color: #ffffff;
+  line-height: 2.2rem;
+  text-align: center;
+  height: 2rem;
+  text-transform: capitalize;
+}
+
+.footer .fa-linkedin-square,
+.footer .fa-github{
+  position: absolute;
+  left: 2rem;
+  bottom: 0.3rem;
+  font-size: 1.5rem;
+  line-height: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* top: 2rem; */
+}
+
+.footer .fa-github{
+  left: 4rem;
+}
+
+.copy{
+  position: absolute;
+  right: 2rem;
+}
+
+.footer .fa-linkedin-square:hover,
+.footer .fa-github:hover{
+  transform: scale(1.1);
+}

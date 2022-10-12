@@ -46,4 +46,5 @@ const setNormalView = isNormalView => {
   };
   
   window.onload = fixBrokenImages;
+
   
