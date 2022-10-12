@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   color: black;
   font-family: "Righteous", cursive;
@@ -23,6 +24,20 @@ title {
   opacity: 0.8;
   background-color: #fff;
   z-index: 99;
+}
+#loading[data-theme='dark'] {
+  background-color: #000;
+}
+.dark-mode {
+  background-color: black;
+  /* color: white; */
+}
+.light-mode {
+  background-color: white;
+  color: black;
+}
+.arrow{
+  color: white;
 }
 
 #header {
@@ -48,7 +63,7 @@ title {
 .backToTop {
   margin-left: 49%;
 
-  color: #000000;
+  color: #d31a1a;
   padding: 0.6%;
   border-radius: 50%;
   margin-bottom: 4%;
