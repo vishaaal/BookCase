@@ -52,6 +52,9 @@ title {
   height: calc(100vh - 4.45rem);
 }
 
+#typewriter{
+  font-size: 150%;
+}
 /* scale-animation-by-sudo-nick16 */
 .card {
   transition: transform 0.2s;
@@ -151,7 +154,7 @@ title {
 }
 
 .cursor {
-  border-right: 4px solid rgba(255, 255, 255, 0.75);
+  border-right: 6px solid rgba(255, 255, 255, 0.75);
   animation: blink 1000ms ease-in infinite;
 }
 
