@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.form-control{
+  width: 750px;
+}
+
 body {
   color: black;
   font-family: "Righteous", cursive;
@@ -189,6 +193,9 @@ title {
 }
 
 @media (max-width: 320px) {
+  .form-control{
+    width: 100%;
+  }
   .lead {
     margin-top: 60%;
   }
@@ -210,6 +217,9 @@ title {
   }
 }
 @media (min-width: 321px) and (max-width: 449px) {
+  .form-control{
+    width: 100%;
+  }
   .lead {
     margin-top: 50%;
   }
@@ -238,6 +248,9 @@ title {
 }
 
 @media only screen and (max-width: 600px) {
+  .form-control{
+    width: 100%;
+  }
   .display-3 {
     font-size: 4rem;
   }
@@ -260,10 +273,15 @@ title {
 
 /* Styles for if the screen is taller than it is wide (assumed mobile view) */
 @media screen and (max-aspect-ratio: 8/7) {
+  .form-control{
+    width: 100%;
+  }
   .display-3 {
     font-size: 6rem;
   }
 }
+
+
 
 .card-title {
   color: #94000f;
