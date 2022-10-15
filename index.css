@@ -11,6 +11,13 @@ body {
   font-family: "Righteous", cursive;
   cursor: url(https://cur.cursors-4u.net/user/use-1/use30.cur), auto !important;
 }
+body.day {
+    background-color: #ffffff;
+}
+
+body.night {
+    background-color: #1E314F;
+}
 head {
   color: #dddddd;
 }
