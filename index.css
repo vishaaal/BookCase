@@ -18,6 +18,16 @@ body.day {
 body.night {
     background-color: #1E314F;
 }
+h1.day,
+p.day {
+    color: #000000;
+}
+
+h1.night,
+p.night {
+    color: #ffffff;
+}
+
 head {
   color: #dddddd;
 }
