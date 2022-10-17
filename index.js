@@ -1,7 +1,16 @@
 
 function darkMode() {
-jQuery('body').toggleClass('day');
-    jQuery('body').toggleClass('night');
+
+    jQuery('body').addClass("night").removeClass("day");
+    jQuery('h1.gallery-head').addClass("night").removeClass("day");
+    jQuery('p.lead').addClass("night").removeClass("day");
+}
+
+
+function lightMode() {
+    jQuery('body').addClass("day").removeClass("night");
+    jQuery('h1.gallery-head').addClass("day").removeClass("night");
+    jQuery('p.lead').addClass("day").removeClass("night");
 }
 
 const setNormalView = isNormalView => {
