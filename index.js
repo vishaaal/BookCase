@@ -22,6 +22,9 @@ $("#color-switch").on("change", function (e) {
 
 const setNormalView = (isNormalView) => {
 	if (isNormalView) {
+		document.querySelector('#normal-view').classList.add('selected');
+      	document.querySelector('#compact-view').classList.remove('selected');
+
 		document.querySelectorAll(".card-body").forEach((cardBody) => {
 			cardBody.classList.remove("hidden");
 		});
@@ -30,6 +33,9 @@ const setNormalView = (isNormalView) => {
 			ele.classList.replace("col-lg-2", "col-lg-4");
 		});
 	} else {
+		document.querySelector('#compact-view').classList.add('selected');
+      	document.querySelector('#normal-view').classList.remove('selected');
+
 		document.querySelectorAll(".card-body").forEach((cardBody) => {
 			cardBody.classList.add("hidden");
 		});
@@ -41,6 +47,14 @@ const setNormalView = (isNormalView) => {
 };
 
 setNormalView(true); // By default normal view is enabled.
+
+document.querySelector('#normal-view').addEventListener('mousedown', () => {
+	setNormalView(true);
+});
+
+document.querySelector('#compact-view').addEventListener('mousedown', () => {
+	setNormalView(false);
+});
 
   const fixBrokenImages = () => {
       const fallbackURL = 'images/fallback_image.png'
