@@ -1,17 +1,18 @@
 
 function darkMode() {
-  var element = document.body;
-  var content = document.getElementById("DarkModetext");
-  element.className = "dark-mode";
-  content.innerText = "Dark Mode is ON";
-  element.className = "arrow";
+
+    jQuery('body').addClass("night").removeClass("day");
+    jQuery('h1.gallery-head').addClass("night").removeClass("day");
+    jQuery('p.lead').addClass("night").removeClass("day");
 }
-  function lightMode() {
-  var element = document.body;
-  var content = document.getElementById("DarkModetext");
-  element.className = "light-mode";
-  content.innerText = "Dark Mode is OFF";
+
+
+function lightMode() {
+    jQuery('body').addClass("day").removeClass("night");
+    jQuery('h1.gallery-head').addClass("day").removeClass("night");
+    jQuery('p.lead').addClass("day").removeClass("night");
 }
+
 const setNormalView = isNormalView => {
     if (isNormalView) {
       document.querySelector('#normal-view').classList.add('selected');
