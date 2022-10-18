@@ -1,3 +1,14 @@
+:root {
+	--color-switcher-width: 64px;
+	--color-switcher-height: 26px;
+	--color-switcher-radio-dimension: 16px;
+	--color-switcher-bg: rgb(212, 209, 220);
+	--color-switcher-circle-bg: rgb(65, 71, 116);
+}
+:root.dark {
+	--color-switcher-bg: rgb(65, 71, 116);
+	--color-switcher-circle-bg: rgb(212, 209, 220);
+}
 html {
   scroll-behavior: smooth;
 }
@@ -101,6 +112,16 @@ title {
 .card-body.hidden {
   display: none;
 }
+.card-body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 1rem;
+}
+.card-body a {
+	width: fit-content;
+	margin-bottom: 0.5rem;
+}
 .card-img-top {
   padding: 2rem;
 }
@@ -131,7 +152,7 @@ title {
 .lead {
   font-size: 1.5rem;
   text-align: center;
-  margin-bottom: 10%;
+  margin-bottom: 4rem;
 }
 .navbar {
   background-color: black;
@@ -139,7 +160,7 @@ title {
 }
 .navbar ~ * {
   position: relative;
-  top: 4.45rem;
+  top: 1rem;
 }
 .navTitle {
   color: #ffffff;
@@ -309,7 +330,7 @@ title {
   place-items: flex-end !important;
   align-content: space-around !important;
   flex-direction: column !important;
-  padding-bottom: 1.1em;
+  margin-bottom: 4rem;
 }
 
 #search-result {
@@ -320,7 +341,7 @@ title {
   /* background: rgb(168, 160, 160); */
   position: fixed;
   left: 0;
-  bottom: -12px;
+  bottom: -16px;
   width: 100%;
   background: black;
   color: #ffffff;
@@ -355,4 +376,48 @@ title {
 .footer .fa-linkedin-square:hover,
 .footer .fa-github:hover{
   transform: scale(1.1);
+}
+
+.color-switcher {
+	width: var(--color-switcher-width);
+	height: var(--color-switcher-height);
+	position: relative;
+}
+#color-switch {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 50;
+	opacity: 0;
+	cursor: pointer;
+	width: var(--color-switcher-width);
+	height: var(--color-switcher-height);
+}
+.color-switch-span {
+	position: absolute;
+	width: var(--color-switcher-width);
+	height: var(--color-switcher-height);
+	background: var(--color-switcher-bg);
+	box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.8);
+	z-index: 10;
+	border-radius: 30px;
+}
+.color-switch-span::before {
+	content: "";
+	position: absolute;
+	top: 5px;
+	left: 8px;
+	z-index: 50;
+	cursor: pointer;
+	width: var(--color-switcher-radio-dimension);
+	height: var(--color-switcher-radio-dimension);
+	border-radius: 50%;
+	background-color: var(--color-switcher-circle-bg);
+	box-shadow: 0px 0px 5px 1.8px rgba(0, 0, 0, 0.5);
+	transition: all 0.4s ease-in;
+}
+#color-switch:checked + .color-switch-span::before {
+	transform: translateX(32px);
 }
