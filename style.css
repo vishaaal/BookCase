@@ -1,0 +1,218 @@
+body{
+    background-image: linear-gradient(#2c2735,#5e4a1f, #022f44,#8f4040);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 40vw;
+    background: #9c91af59;
+    padding: 25px;
+}
+
+.container h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(59, 55, 55);
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.form-wrapper {
+    margin: 20px;
+    width: 100%;
+}
+
+.form {
+    width: 100%;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: Black;
+    font-size: 12px;
+}
+
+.formit {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    width: 100%;
+}
+
+.formit label {
+    width: 150px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formit input {
+    margin: 5px 15px;
+    height: 22px;
+    width: 100%;
+    font-size: 13px;
+    border: 1px black solid;
+    border-radius: 5px;
+}
+
+.genders {
+    display: flex;
+    align-items:left;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:auto;
+    font-size: 24px;
+}
+
+.genders input {
+    width: 38px;
+}
+.skills {
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+    font-size: 11px;
+}
+
+.skills input {
+    width: 12px;
+}
+.register {
+    margin: 25px;
+    background:linear-gradient(#2c2735,#5e4a1f, #022f44,#8f4040);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 7px 20px;
+    border-radius: 5px;
+    color: #fbfbfb;
+    border: 0;
+    cursor: pointer;
+}
+
+.register:hover {
+    color: #dde014;
+}
+.clear {
+    margin: 25px;
+    background: linear-gradient(#2c2735,#5e4a1f, #022f44,#8f4040);
+    background-repeat: no-repeat;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 7px 20px;
+    border-radius: 5px;
+    color: #fbfbfb;
+    border: 0;
+    cursor: pointer;
+}
+
+.clear:hover {
+    color:  #dde014;
+}
+.table-wrapper{
+    margin: 10px 210px 70px;
+    box-shadow: 0px 1px 1px rgba( 0, 0, 0, 0.2 );
+}
+
+.show {
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}
+
+.show td, .show th {
+    text-align: center;
+    padding: 8px;
+}
+
+.show td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 17px;
+}
+
+.show thead th {
+    color: #ffffff;
+    background: gray;
+}
+
+
+.show thead th:nth-child(odd) {
+    color: #ffffff;
+    background: gray;
+}
+
+.show tr:nth-child(even) {
+    background: #F8F8F8;
+}
+
+/* Responsive */
+
+@media (max-width: 767px) {
+    .show {
+        display: block;
+        width: 100%;
+    }
+    .table-wrapper:before{
+        content: "Scroll horizontally >";
+        display: block;
+        text-align: right;
+        font-size: 11px;
+        color: white;
+        padding: 0 0 10px;
+    }
+    .show thead, .show tbody, .show thead th {
+        display: block;
+    }
+    .show thead th:last-child{
+        border-bottom: none;
+    }
+    .show thead {
+        float: left;
+    }
+    .show tbody {
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+    }
+    .show td, .show th {
+        padding: 20px .625em .625em .625em;
+        height: 60px;
+        vertical-align: middle;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 120px;
+        font-size: 13px;
+        text-overflow: ellipsis;
+    }
+    .show thead th {
+        text-align: left;
+        border-bottom: 1px solid #f7f7f9;
+    }
+    .show tbody tr {
+        display: table-cell;
+    }
+    .show tbody tr:nth-child(odd) {
+        background: none;
+    }
+    .show tr:nth-child(even) {
+        background: transparent;
+    }
+    .show tr td:nth-child(odd) {
+        background: #F8F8F8;
+        border-right: 1px solid #E6E4E4;
+    }
+    .show tr td:nth-child(even) {
+        border-right: 1px solid #E6E4E4;
+    }
+    .show tbody td {
+        display: block;
+        text-align: center;
+    }
+}
