@@ -1,11 +1,9 @@
-<<<<<<< HEAD
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-=======
 :root {
 	--color-switcher-width: 64px;
 	--color-switcher-height: 26px;
@@ -17,18 +15,14 @@
 	--color-switcher-bg: rgb(65, 71, 116);
 	--color-switcher-circle-bg: rgb(212, 209, 220);
 }
->>>>>>> d375ff31691034acc6be6d98b4ea3065e6ed65c8
 html {
   scroll-behavior: smooth;
 }
 
-<<<<<<< HEAD
-=======
 .form-control{
   width: 750px;
 }
 
->>>>>>> d375ff31691034acc6be6d98b4ea3065e6ed65c8
 body {
   color: black;
   font-family: "Righteous", cursive;
@@ -36,8 +30,6 @@ body {
   min-height: 100vh;
   max-width: 100%;
 }
-<<<<<<< HEAD
-=======
 body.day {
     background-color: #ffffff;
 }
@@ -54,7 +46,6 @@ h1.night,
 p.night {
     color: #ffffff;
 }
->>>>>>> d375ff31691034acc6be6d98b4ea3065e6ed65c8
 
 head {
   color: #dddddd;
@@ -104,9 +95,6 @@ title {
   height: calc(100vh - 4.45rem);
 }
 
-#typewriter{
-  font-size: 150%;
-}
 /* scale-animation-by-sudo-nick16 */
 .card {
   transition: transform 0.2s;
@@ -135,20 +123,6 @@ title {
 .card-body.hidden {
   display: none;
 }
-<<<<<<< HEAD
-
-=======
-.card-body {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	gap: 1rem;
-}
-.card-body a {
-	width: fit-content;
-	margin-bottom: 0.5rem;
-}
->>>>>>> d375ff31691034acc6be6d98b4ea3065e6ed65c8
 .card-img-top {
   padding: 2rem;
 }
