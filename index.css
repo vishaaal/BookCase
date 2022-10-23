@@ -364,6 +364,9 @@ title {
   flex-direction: column !important;
   margin-bottom: 4rem;
 }
+.footer-basic {
+  text-align: center;
+}
 
 #search-result {
   font-style: italic;
