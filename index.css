@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 :root {
 	--color-switcher-width: 64px;
 	--color-switcher-height: 26px;
@@ -21,6 +27,8 @@ body {
   color: black;
   font-family: "Righteous", cursive;
   cursor: url(https://cur.cursors-4u.net/user/use-1/use30.cur), auto !important;
+  min-height: 100vh;
+  max-width: 100%;
 }
 body.day {
     background-color: #ffffff;
@@ -42,9 +50,11 @@ p.night {
 head {
   color: #dddddd;
 }
+
 title {
   color: #dddddd;
 }
+
 #loading {
   position: fixed;
   display: block;
@@ -80,17 +90,16 @@ title {
 
   display: flex;
   flex-direction: column;
-  width: auto;
+  justify-content: center;
+  max-width: 100%;
   height: calc(100vh - 4.45rem);
 }
 
-#typewriter{
-  font-size: 150%;
-}
 /* scale-animation-by-sudo-nick16 */
 .card {
   transition: transform 0.2s;
 }
+
 .card:hover {
   transform: scale(1.05);
 }
@@ -103,31 +112,25 @@ title {
   border-radius: 50%;
   margin-bottom: 4%;
 }
+
 .card {
   height: 100%;
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
 }
+
 .card-body.hidden {
   display: none;
-}
-.card-body {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	gap: 1rem;
-}
-.card-body a {
-	width: fit-content;
-	margin-bottom: 0.5rem;
 }
 .card-img-top {
   padding: 2rem;
 }
+
 .display-3 {
   font-size: 8rem;
 }
+
 .fas fa-chevron-down fa-6x gallery-icon {
   padding-top: 100px;
 }
@@ -139,39 +142,48 @@ title {
   margin-bottom: 0px;
   text-transform: uppercase;
 }
+
 .gallery-icon {
   color: #000000;
   text-align: center;
 }
+
 .itemNav {
   padding: 15px;
 }
+
 .jumbotron {
   border-radius: 0;
 }
+
 .lead {
   font-size: 1.5rem;
   text-align: center;
   margin-bottom: 4rem;
 }
+
 .navbar {
   background-color: black;
   color: white;
 }
-.navbar ~ * {
+
+.navbar~* {
   position: relative;
   top: 1rem;
 }
+
 .navTitle {
   color: #ffffff;
   padding-left: 50px;
   size: 50px;
 }
+
 .view-div {
   display: flex;
   justify-content: center;
   margin-bottom: 100px;
 }
+
 .view-button {
   width: 130px;
   height: 50px;
@@ -184,13 +196,16 @@ title {
   align-items: center;
   justify-content: space-around;
 }
-.view-button > img {
+
+.view-button>img {
   width: 24px;
   height: 24px;
 }
+
 .view-button:hover {
   cursor: pointer;
 }
+
 .view-button.selected {
   outline: 1px solid black;
 }
@@ -202,22 +217,22 @@ title {
 
 /* ScrollBar */
 ::-webkit-scrollbar {
-	width: 10px;
+  width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-	background: #f1f1f1;
+  background: #f1f1f1;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-	background: #031937;
+  background: #031937;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-	background: #555;
+  background: #555;
 }
 
 @keyframes blink {
@@ -237,12 +252,17 @@ title {
   .lead {
     margin-top: 60%;
   }
+
   #header {
     width: 510px;
+  }
+  .display-1 {
+    font-size: 4rem;
   }
   #icon1 {
     margin-top: -6%;
   }
+
   #gallery1 {
     font-size: 1.5rem;
 
@@ -250,10 +270,12 @@ title {
     margin-left: 50%;
     text-transform: uppercase;
   }
+
   #normal-view {
     margin-left: 50%;
   }
 }
+
 @media (min-width: 321px) and (max-width: 449px) {
   .form-control{
     width: 100%;
@@ -261,24 +283,31 @@ title {
   .lead {
     margin-top: 50%;
   }
+
   #header {
     width: 500px;
+  }
+  .display-1 {
+    font-size: 4.5rem;
   }
   #gallery1,
   #normal-view {
     margin-left: 20%;
   }
 }
+
 @media (min-width: 449px) and (max-width: 750px) {
   #header {
     width: 100%;
   }
 }
+
 @media (min-width: 760px) {
   #header {
     width: 100%;
   }
 }
+
 @media (min-width: 800px) and (max-width: 1440px) {
   #header {
     width: 100%;
@@ -292,9 +321,11 @@ title {
   .display-3 {
     font-size: 4rem;
   }
+
   .gallery-head {
     font-size: 2rem;
   }
+
   .navTitle {
     padding-left: 3px;
   }
@@ -304,7 +335,8 @@ title {
   #header {
     height: calc(100vh - 4.45rem - 15px);
   }
-  .navbar ~ * {
+
+  .navbar~* {
     top: calc(4.45rem + 15px);
   }
 }
@@ -337,7 +369,7 @@ title {
   font-style: italic;
 }
 
-.footer{
+.footer {
   /* background: rgb(168, 160, 160); */
   position: fixed;
   left: 0;
@@ -352,7 +384,7 @@ title {
 }
 
 .footer .fa-linkedin-square,
-.footer .fa-github{
+.footer .fa-github {
   position: absolute;
   left: 2rem;
   bottom: 0.3rem;
@@ -364,17 +396,17 @@ title {
   /* top: 2rem; */
 }
 
-.footer .fa-github{
+.footer .fa-github {
   left: 4rem;
 }
 
-.copy{
+.copy {
   position: absolute;
   right: 2rem;
 }
 
 .footer .fa-linkedin-square:hover,
-.footer .fa-github:hover{
+.footer .fa-github:hover {
   transform: scale(1.1);
 }
 

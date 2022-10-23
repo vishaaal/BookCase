@@ -17,9 +17,11 @@
 
 <body class="day">
   <div id="loading">
-    <img id="loading-image" width="100%" height="100%" src="https://cdn.dribbble.com/users/149180/screenshots/3208433/media/69be039cf606f6fe7ad8d1975306814e.gif" alt="Loading..." />
+    <img id="loading-image" width="100%" height="100%"
+      src="https://cdn.dribbble.com/users/149180/screenshots/3208433/media/69be039cf606f6fe7ad8d1975306814e.gif"
+      alt="Loading..." />
   </div>
-    
+
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <a class="navbar-brand navTitle" href="index.html">
@@ -47,18 +49,13 @@
       </ul>
     </div>
   </nav><!-- Header Section -->
-
-  <div class="jumbotron text-center" id="header">
-
-
-    <h2 class="display-1" style="color: #ffff ;">
-
-      <h2 class="display-1" style="color: #ffff ;">
+  <section>
+    <div class="jumbotron text-center " id="header">
+      <h2 class="display-1" style="color: #ffff ; ">
         <span id="typewriter" data-text="Book Case"></span>
         <span class="cursor"></span>
       </h2>
-    </h2>
-
+  </section>
 
 
   </div>
@@ -75,19 +72,16 @@
     <!-- <a href="#gallery-title"><i class="fas fa-chevron-down fa-6x gallery-icon" id="icon1"></i></a> -->
   </div>
 
-    <!-- Search Bar start -->
-      <div class="input-group">
-        <div class="form-outline">
-          <input id="search-input" 
-          type="search" 
-          class="form-control" 
-          placeholder="Search by book title" 
-          onkeyup="if (event.keyCode == 13) { titleSearch(); return false; }"/>
-          <!-- keyCode 13 is Enter key here -->
-          <span id="search-result"></span>
-        </div>
-      </div>
-    <!-- Search Bar end -->
+  <!-- Search Bar start -->
+  <div class="input-group">
+    <div class="form-outline">
+      <input id="search-input" type="search" class="form-control" placeholder="Search by book title"
+        onkeyup="if (event.keyCode == 13) { titleSearch(); return false; }" />
+      <!-- keyCode 13 is Enter key here -->
+      <span id="search-result"></span>
+    </div>
+  </div>
+  <!-- Search Bar end -->
 
   <section id="gallery">
     <div class="container">
@@ -210,6 +204,10 @@
             <img class="card-img-top" src="https://m.media-amazon.com/images/I/51-uspgqWIL._AC_SY780_.jpg"
               alt="Atomic Habits" />
             <div class="card-body">
+              <h5 class="card-title">Atomic Habits</h5>
+              <p class="card-text">
+                of the best books, I have ever read. Concluding this, then this book taught me
+                how small changes can change your life.</p>
               <div>
                 <h5 class="card-title">Atomic Habits</h5>
                 <p class="card-text">
@@ -221,7 +219,7 @@
             </div>
           </div>
         </div>
-        
+
         <div class="col-lg-4 mb-4">
           <div class="card">
             <img class="card-img-top" src="https://m.media-amazon.com/images/I/410ruFcxtmL._SX324_BO1,204,203,200_.jpg"
@@ -276,6 +274,15 @@
           <div class="card">
             <img class="card-img-top" src="https://m.media-amazon.com/images/I/91nTClkODkL.jpg" />
             <div class="card-body">
+              <h5 class="card-title">Looking for Alaska</h5>
+              <p class="card-text">Looking for Alaska deals with the universal questions of love, friendship, truth, and
+                the gray areas in between.
+                This story is about Miles,
+                who attempts to reinvent himself in a new school,
+                with new friends and activities, and how his meeting with Alaska Young,
+                a witty and carefree girl, changed his life.</p>
+              <a href="https://github.com/Yoogiitaa" class="btn btn-outline-danger btn-sm">Contributed by -
+                Yoogiitaa</a>
               <div>
                 <h5 class="card-title">Looking for Alaska</h5>
                 <p class="card-text">Looking for Alaska deals with the universal questions of love, friendship, truth, and the gray areas in between. 
@@ -297,6 +304,17 @@
           <div class="card">
             <img class="card-img-top" src="https://m.media-amazon.com/images/I/81zqVhvbHbL.jpg" alt="Norwegian Woods" />
             <div class="card-body">
+              <h5 class="card-title">Norwegian Woods</h5>
+              <p class="card-text">Norwegian Wood is a 1987 novel by Japanese author Haruki Murakami. The novel is a
+                nostalgic story of loss and burgeoning sexuality. It is told from the first-person perspective of Toru
+                Watanabe, who looks back on his days as a college student living in Tokyo. Through Watanabe's
+                reminiscences, readers see him develop relationships with two very different women—the beautiful yet
+                emotionally troubled Naoko, and the outgoing, lively Midori.
+
+                This novel is set in late 1960s Tokyo during a period when Japanese students, like those of many other
+                nations, were protesting against the established order.</p>
+              <a href="https://github.com/subhagataa" class="btn btn-outline-danger btn-sm">Contributed by - Subhagata
+                Sardar</a>
               <div>
                 <h5 class="card-title">Norwegian Woods</h5>
                 <p class="card-text">Norwegian Wood is a 1987 novel by Japanese author Haruki Murakami. The novel is a nostalgic story of loss and burgeoning sexuality. It is told from the first-person perspective of Toru Watanabe, who looks back on his days as a college student living in Tokyo. Through Watanabe's reminiscences, readers see him develop relationships with two very different women—the beautiful yet emotionally troubled Naoko, and the outgoing, lively Midori.
@@ -597,9 +615,7 @@
 
         <div class="col-lg-4 mb-4">
           <div class="card">
-            <img class="card-img-top"
-              src="https://m.media-amazon.com/images/I/611OWa8x+WL.jpg"
-              alt="" />
+            <img class="card-img-top" src="https://m.media-amazon.com/images/I/611OWa8x+WL.jpg" alt="" />
             <div class="card-body">
               <div>
                 <h5 class="card-title">How to Win Friends and Influence People</h5>
@@ -631,8 +647,13 @@
         </div>
         <div class="col-lg-4 mb-4">
           <div class="card">
-            <img alt="And the Mountains Echoed" class="card-img-top" src="https://m.media-amazon.com/images/I/41lQDRWYdvL.jpg">
+            <img alt="And the Mountains Echoed" class="card-img-top"
+              src="https://m.media-amazon.com/images/I/41lQDRWYdvL.jpg">
             <div class="card-body">
+              <h5 class="card-title">And the Mountains Echoed</h5>
+              <p class="card-text">Third in the series of some fantastic piece of writing by Hosseini, this book traces
+                the journeys of a brother and sister through years. A story of love, separation, friendship, compassion,
+                exile, memory and the troubled history of Afghanistan, spanning three continents and 60 years</p>
               <div>
                 <h5 class="card-title">And the Mountains Echoed</h5>
                 <p class="card-text">Third in the series of some fantastic piece of writing by Hosseini, this book traces the journeys of a brother and sister through years. A story of love, separation, friendship, compassion, exile, memory and the troubled history of Afghanistan, spanning three continents and 60 years</p>
@@ -664,6 +685,13 @@
           <div class="card">
             <img class="card-img-top" src="https://m.media-amazon.com/images/I/51zCkUXeUML.jpg" alt="" />
             <div class="card-body">
+              <h5 class="card-title">The Power of your Subconscious Mind</h5>
+              <p class="card-text">This book can bring to your notice the innate power that the sub-conscious holds. We
+                have some traits which seem like habits, but in reality these are those traits which are directly
+                controlled by the sub-conscious mind, vis-à-vis your habits or your routine can be changed if you can
+                control and direct your sub-conscious mind positively.</p>
+              <a href="https://github.com/Shravan773" class="btn btn-outline-danger btn-sm">Contributed by -
+                Shravan773</a>
               <div>
                 <h5 class="card-title">The Power of your Subconscious Mind</h5>
                 <p class="card-text">This book can bring to your notice the innate power that the sub-conscious holds. We have some traits which seem like habits, but in reality these are those traits which are directly controlled by the sub-conscious mind, vis-à-vis your habits or your routine can be changed if you can control and direct your sub-conscious mind positively.</p>
@@ -694,12 +722,21 @@
             </div>
           </div>
         </div>
-        
-        
+
+
         <div class="col-lg-4 mb-4">
           <div class="card">
-            <img class="card-img-top" src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/content/Fire_Blood_small.jpeg" alt="" />
+            <img class="card-img-top"
+              src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/content/Fire_Blood_small.jpeg" alt="" />
             <div class="card-body">
+              <h5 class="card-title">Fire and Blood</h5>
+              <p class="card-text">Fire and Blood focuses on the history of the Targaryen family from 300 years before
+                the setting of the first GOT book. They are the first family after Westeros was united and brought under
+                one ruler. We follow the rise and the fall of the family that set up the foundation for the rest of
+                Westeros.</p>
+              <a href="https://github.com/Op-panda" class="btn btn-outline-danger btn-sm">Contributed by - Amit
+                Pandey</a>
+            </div>
               <div>
                 <h5 class="card-title">Fire and Blood</h5>
                 <p class="card-text">Fire and Blood focuses on the history of the Targaryen family from 300 years before the setting of the first GOT book. They are the first family after Westeros was united and brought under one ruler. We follow the rise and the fall of the family that set up the foundation for the rest of Westeros.</p>
@@ -711,12 +748,21 @@
                 </div>
           </div>
         </div>
-       
-       
+
+
         <div class="col-lg-4 mb-4">
           <div class="card">
-            <img class="card-img-top" src="https://m.media-amazon.com/images/I/51kA-Upq61L._SX325_BO1,204,203,200_.jpg" alt="" />
+            <img class="card-img-top" src="https://m.media-amazon.com/images/I/51kA-Upq61L._SX325_BO1,204,203,200_.jpg"
+              alt="" />
             <div class="card-body">
+              <h5 class="card-title">One Indian Girl</h5>
+              <p class="card-text">Moving to the book then, One Indian Girl is a story of a girl called Radhika Mehta
+                who is a hot-shot banker working in the prestigious Investment Bank, Goldman Sachs. Radhika, who once
+                was as nerdy as one can be, is now arranged to get married to Brijesh Gulati and has just arrived for
+                her destination wedding in Goa.
+                .</p>
+              <a href="https://github.com/Happy2411" class="btn btn-outline-danger btn-sm">Contributed by - Happy
+                Singh</a>
               <div>
                 <h5 class="card-title">One Indian Girl</h5>
                 <p class="card-text">Moving to the book then, One Indian Girl is a story of a girl called Radhika Mehta who is a hot-shot banker working in the prestigious Investment Bank, Goldman Sachs. Radhika, who once was as nerdy as one can be, is now arranged to get married to Brijesh Gulati and has just arrived for her destination wedding in Goa.
@@ -732,9 +778,14 @@
 
         <div class="col-lg-4 mb-4">
           <div class="card">
-             <img class="card-img-top" src="https://m.media-amazon.com/images/I/718wzK6mymL.jpg" 
-             alt="Think And Grow Rich" />
+            <img class="card-img-top" src="https://m.media-amazon.com/images/I/718wzK6mymL.jpg"
+              alt="Think And Grow Rich" />
             <div class="card-body">
+              <h5 class="card-title">Think and Grow Rich</h5>
+              <p class="card-text">A text full of anecdotes each of which offers a lesson in how one can use the
+                power of their mind to manifest the reality they truly desire. This book is definite classic and is
+                really focused on how to manage oneself in order to enjoy a productive and successful life. </p>
+              <a href="https://github.com/priyadarshni-jha" class="btn btn-outline-danger btn-sm">Contributed by -
               <div>
                 <h5 class="card-title">Think and Grow Rich</h5>
                 <p class="card-text">A text full of anecdotes each of which offers a lesson in how one can use the 
@@ -743,8 +794,8 @@
               </div>
                <a href="https://github.com/priyadarshni-jha" class="btn btn-outline-danger btn-sm">Contributed by - 
                 Priyadarshni Jha</a>
-             </div>
-           </div>
+            </div>
+          </div>
         </div>
         <div class="col-lg-4 mb-4">
           <div class="card">
@@ -776,6 +827,21 @@
           </div>
         </div>
       </div> -->
+
+
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img class="card-img-top"
+              src="https://coolerinsights.com/wp-content/uploads/2019/04/Think-and-Grow-Rich-Book-Cover.jpg"
+              alt="Think and Grow Rich" />
+            <div class="card-body">
+              <h5 class="card-title">Think And Grow Rich</h5>
+              <p class="card-text">Think and Grow Rich was written in 1937 by Napoleon Hill, promoted as a personal
+                development and self-improvement book. Hill writes that he was inspired by a suggestion from business
+                magnate and later-philanthropist Andrew Carnegie. Think and Grow Rich.</p>
+              <a href="https://github.com/Parth4git" class="btn btn-outline-danger btn-sm">Contributed by -
+                Parth Dwivedi</a>
+            </div>
       
       
       <div class="col-lg-4 mb-4">
@@ -791,12 +857,21 @@
               Parth Dwivedi</a>
           </div>
         </div>
-      </div>
-        
+
         <div class="col-lg-4 mb-4">
-          <div class="card">      
-            <img class="card-img-top" src="https://m.media-amazon.com/images/I/51oOEob0QWL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg" alt="God's War" />
+          <div class="card">
+            <img class="card-img-top"
+              src="https://m.media-amazon.com/images/I/51oOEob0QWL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg"
+              alt="God's War" />
             <div class="card-body">
+              <h5 class="card-title">God's War</h5>
+              <p class="card-text">The story of how a group of warriors, driven by faith, greed and wanderlust, carved
+                out new Christian-ruled states in the Middle East is one of the most extraordinary of all epics. The
+                crusaders' stunning initial success started a sequence of great Crusades, each with its own story, that
+                fundamentally shaped the Christian and Muslim worlds for two centuries, until the last Crusader castles
+                were finally expunged. The energy and commitment that sent army after army into the eastern
+                Mediterranean also led to the invasion and conversion of Central and Baltic Europe, Spain, Portugal, the
+                destruction of the Cathars in Provence and the settlement of America.</p>
               <div>
                 <h5 class="card-title">God's War</h5>
                 <p class="card-text">The story of how a group of warriors, driven by faith, greed and wanderlust, carved out new Christian-ruled states in the Middle East is one of the most extraordinary of all epics. The crusaders' stunning initial success started a sequence of great Crusades, each with its own story, that fundamentally shaped the Christian and Muslim worlds for two centuries, until the last Crusader castles were finally expunged. The energy and commitment that sent army after army into the eastern Mediterranean also led to the invasion and conversion of Central and Baltic Europe, Spain, Portugal, the destruction of the Cathars in Provence and the settlement of America.</p>
@@ -806,29 +881,38 @@
             </div>
           </div>
         </div>
-        
+
         <div class="col-lg-4 mb-4">
           <div class="card">
             <img class="card-img-top" src="https://m.media-amazon.com/images/I/41SxL78DpvL.jpg" alt="" />
             <div class="card-body">
+              <h5 class="card-title">21 lessons for the 21st century</h5>
+              <p class="card-text">In a world deluged by irrelevant information, clarity is power. Censorship works not
+                by blocking the flow of information, but rather by flooding people with disinformation and distractions.
+                21 Lessons for the 21st Century cuts through these muddy waters and confronts some of the most urgent
+                questions on today’s global agenda.</p>
               <div>
                 <h5 class="card-title">21 lessons for the 21st century</h5>
                 <p class="card-text">In a world deluged by irrelevant information, clarity is power. Censorship works not by blocking the flow of information, but rather by flooding people with disinformation and distractions. 21 Lessons for the 21st Century cuts through these muddy waters and confronts some of the most urgent questions on today’s global agenda.</p>
               </div>
               <a href="https://github.com/codedoc7" class="btn btn-outline-danger btn-sm">
-              Contributed by - Keshav</a>
+                Contributed by - Keshav</a>
+            </div>
           </div>
-         </div>
-       </div>
+        </div>
 
 
 
 
         <div class="col-lg-4 mb-4">
           <div class="card">
-            <img alt="The Code Book" class="card-img-top"
-              src="https://m.media-amazon.com/images/I/51kQWMG+ZzL.jpg">
+            <img alt="The Code Book" class="card-img-top" src="https://m.media-amazon.com/images/I/51kQWMG+ZzL.jpg">
             <div class="card-body">
+              <h5 class="card-title">The Code Book: The Science of Secrecy from Ancient Egypt to Quantum Cryptography
+              </h5>
+              <p class="card-text">In his first book since the bestselling Fermat's Enigma, Simon Singh offers the first
+                sweeping history of encryption, tracing its evolution and revealing the dramatic effects codes have had
+                on wars, nations, and individual lives.</p>
               <div>
                 <h5 class="card-title">The Code Book: The Science of Secrecy from Ancient Egypt to Quantum Cryptography</h5>
                 <p class="card-text">In his first book since the bestselling Fermat's Enigma, Simon Singh offers the first sweeping history of encryption, tracing its evolution and revealing the dramatic effects codes have had on wars, nations, and individual lives.</p>
@@ -874,12 +958,18 @@
  
           
 
-      
-         <div class="col-lg-4 mb-4">
+
+
+
+        <div class="col-lg-4 mb-4">
           <div class="card">
-            <img alt="The Code Book" class="card-img-top"
-              src="https://m.media-amazon.com/images/I/81kUR2GPGNL.jpg">
+            <img alt="The Code Book" class="card-img-top" src="https://m.media-amazon.com/images/I/81kUR2GPGNL.jpg">
             <div class="card-body">
+              <h5 class="card-title">The Man Who Knew Too Much: A Detective, his unorthodox ways to solve mysterious
+                crimes and a tussle between Justice and his family</h5>
+              <p class="card-text">The Man Who Knew Too Much is a humorous story set in an army training camp. It
+                highlights the attitude of one of the trainees at the camp, Private Quelch, who has a habit of showing
+                off his knowledge in an attempt to outshine the other trainees in his batch.</p>
               <div>
                 <h5 class="card-title">The Man Who Knew Too Much: A Detective, his unorthodox ways to solve mysterious crimes and a tussle between Justice and his family</h5>
                 <p class="card-text">The Man Who Knew Too Much is a humorous story set in an army training camp. It highlights the attitude of one of the trainees at the camp, Private Quelch, who has a habit of showing off his knowledge in an attempt to outshine the other trainees in his batch.</p>
@@ -888,7 +978,9 @@
                 Aman Maurya</a>
             </div>
           </div>
-        </div>  
+        </div>
+
+
 
         <div class="col-lg-4 mb-4">
           <div class="card">
@@ -909,9 +1001,33 @@
       
         <div class="col-lg-4 mb-4">
           <div class="card">
-            <img alt="The Code Book" class="card-img-top"
-              src="https://m.media-amazon.com/images/I/81+vsc3xbQL.jpg">
+            <img class="card-img-top"
+              src="https://upload.wikimedia.org/wikipedia/en/3/3a/Wings_of_Fire_by_A_P_J_Abdul_Kalam_Book_Cover.jpg"
+              alt="" />
             <div class="card-body">
+              <h5 class="card-title">Wings of Fire</h5>
+              <p class="card-text">Wings of Fire, is the autobiography of the Missile Man of India and President of
+                India, Dr. A. P. J. Abdul Kalam. It was written by him and Arun Tiwari.</p>
+              <a href="https://github.com/Op-panda" class="btn btn-outline-danger btn-sm">Contributed by - Amit
+                Pandey</a>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img alt="The Code Book" class="card-img-top" src="https://m.media-amazon.com/images/I/81+vsc3xbQL.jpg">
+            <div class="card-body">
+              <h5 class="card-title">Programming With C (SCHAUMS OUTLINES SERIES)</h5>
+              <p class="card-text">
+                This book follows a simplified way for solving problem. Through sample programs, it guides the readers
+                to comprehend the different situations in which a certain feature can be used. The book has been
+                developed based on the ANSI C standards. There is emphasis on designing clear, legible, modular and
+                efficient programs throughout the book.
+              </p>
               <div>
                 <h5 class="card-title">Programming With C (SCHAUMS OUTLINES SERIES)</h5>
                 <p class="card-text">
@@ -923,11 +1039,19 @@
             </div>
           </div>
         </div>
-        
+
         <div class="col-lg-4 mb-4">
           <div class="card">
-            <img class="card-img-top" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1610730335i/53086843.jpg" alt="You've Reached Sam" />
+            <img class="card-img-top"
+              src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1610730335i/53086843.jpg"
+              alt="You've Reached Sam" />
             <div class="card-body">
+              <h5 class="card-title">You've Reached Sam</h5>
+              <p class="card-text"> Dustin Thao's You've Reached Sam, a heartfelt novel about love and loss and what it
+                means to say goodbye.Seventeen-year-old Julie Clarke has her future all planned out―move out of her
+                small town with her boyfriend Sam, attend college in the city; spend a summer in Japan. But then Sam
+                dies. And everything changes. Heartbroken, Julie skips his funeral, throws out his belongings, and tries
+                everything to forget him. But a message Sam left behind in her yearbook forces memories to return.</p>
               <div>
                 <h5 class="card-title">You've Reached Sam</h5>
                 <p class="card-text"> Dustin Thao's You've Reached Sam, a heartfelt novel about love and loss and what it means to say goodbye.Seventeen-year-old Julie Clarke has her future all planned out―move out of her small town with her boyfriend Sam, attend college in the city; spend a summer in Japan. But then Sam dies. And everything changes. Heartbroken, Julie skips his funeral, throws out his belongings, and tries everything to forget him. But a message Sam left behind in her yearbook forces memories to return.</p>
@@ -937,8 +1061,23 @@
             </div>
           </div>
         </div>
-        
 
+
+
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img class="card-img-top"
+              src="https://1.bp.blogspot.com/-XuGgmtuKFwU/YPKmTZ-64zI/AAAAAAAACTo/Yi3_th91rlMs1G8HecNtBWyJTybz7FfRACLcBGAsYHQ/s693/16.png"
+              alt="life mitra book" />
+            <div class="card-body">
+              <h5 class="card-title">काश ये बातें 20 की उम्र में पता होती</h5>
+              <p class="card-text">This is a awesome book for self Development / personality Development book which will
+                help to think a new perspective in life Basically, Almost all successful people believe that every
+                person living in this world is a product of his own thinking. He who thinks of himself, one day he
+                remains there. Our life begins in critical thinking, what we keep thinking, we do there and the result
+                of what we do, that decides our life. so must give it a try !</p>
+              <a href="https://github.com/pratap360" class="btn btn-outline-danger btn-sm">Contributed by - Pratap
+                Parui</a>
         
        <div class="col-lg-4 mb-4">
          <div class="card">
@@ -955,8 +1094,19 @@
 
         <div class="col-lg-4 mb-4">
           <div class="card">
-            <img class="card-img-top" src="http://writeeditions.com/wp-content/uploads/2016/08/Cover-MentalHealthMatters.jpg" alt="" />
+            <img class="card-img-top"
+              src="http://writeeditions.com/wp-content/uploads/2016/08/Cover-MentalHealthMatters.jpg" alt="" />
             <div class="card-body">
+              <h5 class="card-title">MENTAL HEALTH MATTERS</h5>
+              <p class="card-text">This ia an awesome book in order to develop the positive mental health,what we
+                achieve is not matters but,while in the process of achieving our goals how we are managing our mental
+                health to build up the confidence and faith in ourselves is important.Positive mental health helps us
+                become more empathetic to outside situations. Dismantling the stigma attached to mental illness is an
+                important step to take. Promotes Strong Immune System: believe it or not, our mental health can have an
+                impact on our physical body.
+              </p>
+              <a href="https://github.com/Vagdevi007" class="btn btn-outline-danger btn-sm">Contributed by - Surarapu
+                Vagdevi</a>
               <div>
                 <h5 class="card-title">MENTAL HEALTH MATTERS</h5>
                 <p class="card-text">This ia an awesome book in order to develop the positive mental health,what we achieve is not matters but,while in the process of achieving our goals how we are managing our mental health to build up the confidence and faith in ourselves is important.Positive mental health helps us become more empathetic to outside situations. Dismantling the stigma attached to mental illness is an important step to take. Promotes Strong Immune System: believe it or not, our mental health can have an impact on our physical body.
@@ -971,11 +1121,41 @@
             </div>
           </div>
         </div>
-        
+
         <div class="col-lg-4 mb-4">
           <div class="card">
-             <img class="card-img-top" src="https://www.thebalancemoney.com/thmb/1HhzEc1HTgk_1cUE9w1MX769tvU=/2250x0/filters:no_upscale():max_bytes(150000):strip_icc()/Webp.net-resizeimage12-b9cd8d74bcef401cb591813dafefd583.jpg" alt="life mitra book"/>
+            <img class="card-img-top"
+              src="https://www.thebalancemoney.com/thmb/1HhzEc1HTgk_1cUE9w1MX769tvU=/2250x0/filters:no_upscale():max_bytes(150000):strip_icc()/Webp.net-resizeimage12-b9cd8d74bcef401cb591813dafefd583.jpg"
+              alt="life mitra book" />
             <div class="card-body">
+              <h5 class="card-title">Broke Millenials</h5>
+              <p class="card-text">If you can decipher #GYFLT, then this is the personal finance book for you. (Hint:
+                #GYFLT stands for “get your financial life together” in social media speak.) Erin Lowrys “Broke
+                Millennial” explains in her signature conversational style how 20-somethings can get in control of their
+                personal finances. From understanding your relationship with money to managing student loans to sharing
+                the details of your finances with a partner, this book covers the biggest money challenges facing
+                millennials today. </p>
+              <a href="https://github.com/dadangsetio" class="btn btn-outline-danger btn-sm">Contributed by - Dadang
+                Budi</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img class="card-img-top" src="https://m.media-amazon.com/images/I/412GfwQATXL._SX347_BO1,204,203,200_.jpg"
+              alt="Let Us C" />
+            <div class="card-body">
+              <h5 class="card-title">Let Us C : Authentic guide to C programming language</h5>
+              <p class="card-text">the most interesting C programming books for C language learners. The book begins
+                with the basic knowledge of different concepts and further leads to advanced levels. This means the book
+                will provide complete knowledge to the readers from basic to complex programming parts.</p>
+              <a href="https://github.com/kunal15112001" class="btn btn-outline-danger btn-sm">Contributed by - kunal
+                Bhade</a>
+            </div>
+          </div>
+        </div>
+
               <div>
                 <h5 class="card-title">Broke Millenials</h5>
                 <p class="card-text">If you can decipher #GYFLT, then this is the personal finance book for you. (Hint: #GYFLT stands for “get your financial life together” in social media speak.) Erin Lowrys “Broke Millennial” explains in her signature conversational style how 20-somethings can get in control of their personal finances. From understanding your relationship with money to managing student loans to sharing the details of your finances with a partner, this book covers the biggest money challenges facing millennials today. </p>
@@ -1109,10 +1289,13 @@
     <a href="#header" class="back-to-top arrow"><i class="fas fa-angle-up fa-4x backToTop"></i></a>
   </footer>
   <foot>
-    
-    <p class="footer"> <a href="https://www.linkedin.com/in/vishaaal/"><i class="fa fa-linkedin-square" style="color:white" aria-hidden="true"></a></i></i><a href="https://github.com/vishaaal"><i class="fa fa-github" style="color:white"></i></a> made with &#128147; by Vishal
-     <strong class="copy">BOOK CASE &copy; 2022</strong></p>
-    </foot>
+
+    <p class="footer"> <a href="https://www.linkedin.com/in/vishaaal/"><i class="fa fa-linkedin-square"
+          style="color:white" aria-hidden="true"></a></i></i><a href="https://github.com/vishaaal"><i
+          class="fa fa-github" style="color:white"></i></a> made with &#128147; by Vishal
+      <strong class="copy">BOOK CASE &copy; 2022</strong>
+    </p>
+  </foot>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
@@ -1127,11 +1310,11 @@
 
 
 </body>
-  
+
 <script>
   $(window).on('load', function () {
     $('#loading').hide();
   }) 
 </script>
-  
+
 </html>
