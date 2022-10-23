@@ -8,7 +8,8 @@ nav {
     color: black;
   }
   body {
-    background-color: white;
+    /* background-color: white; */
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='40' height='40' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform='rotate(135)'%3E%3Crect width='100%25' height='100%25' fill='rgba(247, 250, 252,1)'/%3E%3Cpath d='M0 29a 9-9 0 0 0 9-9a 11-11 0 0 1 11-11v2a-9 9 0 0 0-9 9a-11 11 0 0 1-11 11zM0 69a 9-9 0 0 0 9-9a 11-11 0 0 1 11-11v2a-9 9 0 0 0-9 9a-11 11 0 0 1-11 11z' fill='rgba(203, 213, 224,1)'/%3E%3Cpath d='M20 29.5a 9.5-9.5 0 0 0 9.5-9.5a 10.5-10.5 0 0 1 10.5-10.5v1a-9.5 9.5 0 0 0-9.5 9.5a-10.5 10.5 0 0 1-10.5 10.5z' fill='rgba(226, 232, 240,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ");
     font-family: "Righteous", cursive;
     cursor: url(https://cur.cursors-4u.net/user/use-1/use30.cur), auto !important;
   }
@@ -20,10 +21,14 @@ nav {
   }
   
   #one {
-    background-color: rgb(40, 103, 178);
+    /* background-color: rgb(40, 103, 178); */
+    background-image: url('./images/linkedin.png');
+    background-size: cover;
   }
   #two {
-    background-color: rgb(33, 31, 31);
+    /* background-color: rgb(33, 31, 31); */
+    background-image: url('./images/github.png');
+    background-size: cover;
   }
   #three {
     background-color: rgb(225, 48, 108);
