@@ -250,7 +250,7 @@ title {
     width: 100%;
   }
   .lead {
-    margin-top: 60%;
+    margin-top: 20px;
   }
 
   #header {
@@ -265,14 +265,8 @@ title {
 
   #gallery1 {
     font-size: 1.5rem;
-
     margin-top: 5%;
-    margin-left: 50%;
     text-transform: uppercase;
-  }
-
-  #normal-view {
-    margin-left: 50%;
   }
 }
 
@@ -280,19 +274,12 @@ title {
   .form-control{
     width: 100%;
   }
-  .lead {
-    margin-top: 50%;
-  }
 
   #header {
     width: 500px;
   }
   .display-1 {
     font-size: 4.5rem;
-  }
-  #gallery1,
-  #normal-view {
-    margin-left: 20%;
   }
 }
 
@@ -452,4 +439,23 @@ title {
 }
 #color-switch:checked + .color-switch-span::before {
 	transform: translateX(32px);
+}
+@media (max-width: 575.98px){
+  .footer{
+    height: 5rem;
+    padding: 2px;
+    font-size: large;
+  }
+  .copy{
+    bottom: 3px;
+  }
+  .footer .fa-linkedin-square, .footer .fa-github {
+    bottom: 0.7rem;
+  }
+  .lead{
+    margin: 20px;
+  }
+  .input-group{
+    margin-bottom: 2rem;
+  }
 }
