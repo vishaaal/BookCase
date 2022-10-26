@@ -5,21 +5,23 @@
 }
 
 :root {
-	--color-switcher-width: 64px;
-	--color-switcher-height: 26px;
-	--color-switcher-radio-dimension: 16px;
-	--color-switcher-bg: rgb(212, 209, 220);
-	--color-switcher-circle-bg: rgb(65, 71, 116);
+  --color-switcher-width: 48px;
+  --color-switcher-height: 24px;
+  --color-switcher-radio-dimension: 20px;
+  --color-switcher-bg: rgba(255, 255, 255, 0.947);
+  --color-switcher-circle-bg: rgba(18, 17, 17, 0.952);
 }
+
 :root.dark {
-	--color-switcher-bg: rgb(65, 71, 116);
-	--color-switcher-circle-bg: rgb(212, 209, 220);
+  --color-switcher-bg: black;
+  --color-switcher-circle-bg: white;
 }
+
 html {
   scroll-behavior: smooth;
 }
 
-.form-control{
+.form-control {
   width: 750px;
 }
 
@@ -30,21 +32,23 @@ body {
   min-height: 100vh;
   max-width: 100%;
 }
+
 body.day {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 body.night {
-    background-color: #1E314F;
+  background-color: #1E314F;
 }
+
 h1.day,
 p.day {
-    color: #000000;
+  color: #000000;
 }
 
 h1.night,
 p.night {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 head {
@@ -67,18 +71,22 @@ title {
   background-color: #fff;
   z-index: 99;
 }
+
 #loading[data-theme='dark'] {
   background-color: #000;
 }
+
 .dark-mode {
   background-color: black;
   /* color: white; */
 }
+
 .light-mode {
   background-color: white;
   color: black;
 }
-.arrow{
+
+.arrow {
   color: white;
 }
 
@@ -123,6 +131,7 @@ title {
 .card-body.hidden {
   display: none;
 }
+
 .card-img-top {
   padding: 2rem;
 }
@@ -246,9 +255,10 @@ title {
 }
 
 @media (max-width: 320px) {
-  .form-control{
+  .form-control {
     width: 100%;
   }
+
   .lead {
     margin-top: 20px;
   }
@@ -256,9 +266,11 @@ title {
   #header {
     width: 510px;
   }
+
   .display-1 {
     font-size: 4rem;
   }
+
   #icon1 {
     margin-top: -6%;
   }
@@ -271,13 +283,14 @@ title {
 }
 
 @media (min-width: 321px) and (max-width: 449px) {
-  .form-control{
+  .form-control {
     width: 100%;
   }
 
   #header {
     width: 500px;
   }
+
   .display-1 {
     font-size: 4.5rem;
   }
@@ -287,11 +300,19 @@ title {
   #header {
     width: 100%;
   }
+
+  .color-switcher {
+    margin-left: 99px;
+  }
 }
 
 @media (min-width: 760px) {
   #header {
     width: 100%;
+  }
+
+  .color-switcher {
+    margin-left: 300px;
   }
 }
 
@@ -299,12 +320,17 @@ title {
   #header {
     width: 100%;
   }
+
+  .color-switcher {
+    margin-left: 330px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-  .form-control{
+  .form-control {
     width: 100%;
   }
+
   .display-3 {
     font-size: 4rem;
   }
@@ -326,13 +352,19 @@ title {
   .navbar~* {
     top: calc(4.45rem + 15px);
   }
+
+  .color-switcher {
+    margin-left: 330px;
+  }
+
 }
 
 /* Styles for if the screen is taller than it is wide (assumed mobile view) */
 @media screen and (max-aspect-ratio: 8/7) {
-  .form-control{
+  .form-control {
     width: 100%;
   }
+
   .display-3 {
     font-size: 6rem;
   }
@@ -398,64 +430,88 @@ title {
 }
 
 .color-switcher {
-	width: var(--color-switcher-width);
-	height: var(--color-switcher-height);
-	position: relative;
+  width: var(--color-switcher-width);
+  height: var(--color-switcher-height);
+  position: relative;
 }
+
 #color-switch {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	z-index: 50;
-	opacity: 0;
-	cursor: pointer;
-	width: var(--color-switcher-width);
-	height: var(--color-switcher-height);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 50;
+  opacity: 0;
+  cursor: pointer;
+  width: var(--color-switcher-width);
+  height: var(--color-switcher-height);
 }
+
 .color-switch-span {
-	position: absolute;
-	width: var(--color-switcher-width);
-	height: var(--color-switcher-height);
-	background: var(--color-switcher-bg);
-	box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.8);
-	z-index: 10;
-	border-radius: 30px;
+  position: absolute;
+  width: var(--color-switcher-width);
+  height: var(--color-switcher-height);
+  background: var(--color-switcher-bg);
+  box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.8);
+  z-index: 10;
+  border-radius: 30px;
 }
+
 .color-switch-span::before {
-	content: "";
-	position: absolute;
-	top: 5px;
-	left: 8px;
-	z-index: 50;
-	cursor: pointer;
-	width: var(--color-switcher-radio-dimension);
-	height: var(--color-switcher-radio-dimension);
-	border-radius: 50%;
-	background-color: var(--color-switcher-circle-bg);
-	box-shadow: 0px 0px 5px 1.8px rgba(0, 0, 0, 0.5);
-	transition: all 0.4s ease-in;
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2.6px;
+  z-index: 50;
+  cursor: pointer;
+  width: var(--color-switcher-radio-dimension);
+  height: var(--color-switcher-radio-dimension);
+  border-radius: 50%;
+  background-color: var(--color-switcher-circle-bg);
+  box-shadow: 0px 0px 5px 1.8px rgba(0, 0, 0, 0.5);
+  transition: all 0.4s ease-in;
 }
-#color-switch:checked + .color-switch-span::before {
-	transform: translateX(32px);
+
+#color-switch:checked+.color-switch-span::before {
+  transform: translateX(23px);
 }
-@media (max-width: 575.98px){
-  .footer{
+
+.fa-solid {
+  /* margin:0 2.5px 3px 2px ; */
+  margin-left: 6.4px;
+  font-size: 14px;
+}
+
+.fa-moon {
+  color: white;
+}
+
+.fa-sun {
+  color: #d8900b;
+}
+
+@media (max-width: 575.98px) {
+  .footer {
     height: 5rem;
     padding: 2px;
     font-size: large;
   }
-  .copy{
+
+  .copy {
     bottom: 3px;
   }
-  .footer .fa-linkedin-square, .footer .fa-github {
+
+  .footer .fa-linkedin-square,
+  .footer .fa-github {
     bottom: 0.7rem;
   }
-  .lead{
+
+  .lead {
     margin: 20px;
   }
-  .input-group{
+
+  .input-group {
     margin-bottom: 2rem;
   }
 }
