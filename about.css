@@ -1,80 +1,187 @@
+:root {
+  --color-switcher-width: 48px;
+  --color-switcher-height: 24px;
+  --color-switcher-radio-dimension: 20px;
+  --color-switcher-bg: rgba(255, 255, 255, 0.947);
+  --color-switcher-circle-bg: rgba(18, 17, 17, 0.952);
+}
+
+:root.dark {
+  --color-switcher-bg: black;
+  --color-switcher-circle-bg: white;
+}
+
+body.day {
+  background-color: #ffffff;
+}
+
+body.night {
+  background-color: #1E314F;
+}
+
+h1.day,
+p.day {
+  color: #000000;
+}
+
+h1.night,
+p.night {
+  color: #ffffff;
+}
+
 nav {
-    color: white;
-    background-color: black;
-  }
-  
-  #para {
-    text-align: center;
-    color: black;
-  }
-  body {
-    /* background-color: white; */
-    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='40' height='40' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform='rotate(135)'%3E%3Crect width='100%25' height='100%25' fill='rgba(247, 250, 252,1)'/%3E%3Cpath d='M0 29a 9-9 0 0 0 9-9a 11-11 0 0 1 11-11v2a-9 9 0 0 0-9 9a-11 11 0 0 1-11 11zM0 69a 9-9 0 0 0 9-9a 11-11 0 0 1 11-11v2a-9 9 0 0 0-9 9a-11 11 0 0 1-11 11z' fill='rgba(203, 213, 224,1)'/%3E%3Cpath d='M20 29.5a 9.5-9.5 0 0 0 9.5-9.5a 10.5-10.5 0 0 1 10.5-10.5v1a-9.5 9.5 0 0 0-9.5 9.5a-10.5 10.5 0 0 1-10.5 10.5z' fill='rgba(226, 232, 240,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ");
-    font-family: "Righteous", cursive;
-    cursor: url(https://cur.cursors-4u.net/user/use-1/use30.cur), auto !important;
-  }
-  h1 {
-    color: black;
-    text-align: center;
-    margin-top: 90px;
-    margin-bottom: 40px;
-  }
-  
-  #one {
-    /* background-color: rgb(40, 103, 178); */
-    background-image: url('./images/linkedin.png');
-    background-size: cover;
-  }
-  #two {
-    /* background-color: rgb(33, 31, 31); */
-    background-image: url('./images/github.png');
-    background-size: cover;
-  }
-  #three {
-    background-color: rgb(225, 48, 108);
-  }
-  #buttons {
-    margin-bottom: 10px;
-  }
-  .navTitle {
-    color: #ffffff;
-    padding-left: 50px;
-    size: 50px;
-  }
-  
-  .itemNav {
-    padding: 15px;
-  }
-  .about-title {
-    padding-top: 6%;
+  color: white;
+  background-color: black;
+}
+
+#para {
+  text-align: center;
+  color: black;
+}
+
+body {
+  /* background-color: white; */
+  /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='40' height='40' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform='rotate(135)'%3E%3Crect width='100%25' height='100%25' fill='rgba(247, 250, 252,1)'/%3E%3Cpath d='M0 29a 9-9 0 0 0 9-9a 11-11 0 0 1 11-11v2a-9 9 0 0 0-9 9a-11 11 0 0 1-11 11zM0 69a 9-9 0 0 0 9-9a 11-11 0 0 1 11-11v2a-9 9 0 0 0-9 9a-11 11 0 0 1-11 11z' fill='rgba(203, 213, 224,1)'/%3E%3Cpath d='M20 29.5a 9.5-9.5 0 0 0 9.5-9.5a 10.5-10.5 0 0 1 10.5-10.5v1a-9.5 9.5 0 0 0-9.5 9.5a-10.5 10.5 0 0 1-10.5 10.5z' fill='rgba(226, 232, 240,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E "); */
+  font-family: "Righteous", cursive;
+  cursor: url(https://cur.cursors-4u.net/user/use-1/use30.cur), auto !important;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+  margin-top: 90px;
+  margin-bottom: 40px;
+}
+
+#one {
+  /* background-color: rgb(40, 103, 178); */
+  background-image: url('./images/linkedin.png');
+  background-size: cover;
+}
+
+#two {
+  /* background-color: rgb(33, 31, 31); */
+  background-image: url('./images/github.png');
+  background-size: cover;
+}
+
+#three {
+  background-color: rgb(225, 48, 108);
+}
+
+#buttons {
+  margin-bottom: 10px;
+}
+
+.navTitle {
+  color: #ffffff;
+  padding-left: 50px;
+  size: 50px;
+}
+
+.itemNav {
+  padding: 15px;
+}
+
+.about-title {
+  padding-top: 6%;
+}
+
+#loading {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  opacity: 0.8;
+  background-color: #fff;
+  z-index: 99;
+}
+
+.card {
+  border: none;
+  margin: 40px 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  .display-3 {
+    font-size: 4rem;
   }
 
-  #loading {
-    position: fixed;
-    display: block;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    text-align: center;
-    opacity: 0.8;
-    background-color: #fff;
-    z-index: 99;
+  .lead {
+    font-size: 1.6rem;
   }
-  
-  
-  @media only screen and (max-width: 600px) {
-    .display-3 {
-      font-size: 4rem;
-    }
-    .lead {
-      font-size: 1.6rem;
-    }
-    .gallery-head {
-      font-size: 2rem;
-    }
-    .navTitle {
-      padding-left: 3px;
-    }
+
+  .gallery-head {
+    font-size: 2rem;
   }
-  
+
+  .navTitle {
+    padding-left: 3px;
+  }
+}
+
+
+.color-switcher {
+  width: var(--color-switcher-width);
+  height: var(--color-switcher-height);
+  position: relative;
+}
+
+#color-switch {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 50;
+  opacity: 0;
+  cursor: pointer;
+  width: var(--color-switcher-width);
+  height: var(--color-switcher-height);
+}
+
+.color-switch-span {
+  position: absolute;
+  width: var(--color-switcher-width);
+  height: var(--color-switcher-height);
+  background: var(--color-switcher-bg);
+  box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.8);
+  z-index: 10;
+  border-radius: 30px;
+}
+
+.color-switch-span::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2.6px;
+  z-index: 50;
+  cursor: pointer;
+  width: var(--color-switcher-radio-dimension);
+  height: var(--color-switcher-radio-dimension);
+  border-radius: 50%;
+  background-color: var(--color-switcher-circle-bg);
+  box-shadow: 0px 0px 5px 1.8px rgba(0, 0, 0, 0.5);
+  transition: all 0.4s ease-in;
+}
+
+#color-switch:checked+.color-switch-span::before {
+  transform: translateX(23px);
+}
+
+.fa-solid {
+  /* margin:0 2.5px 3px 2px ; */
+  margin-left: 6.4px;
+  font-size: 14px;
+}
+
+.fa-moon {
+  color: white;
+}
+
+.fa-sun {
+  color: #d8900b;
+}
