@@ -20,6 +20,16 @@ $("#color-switch").on("change", function (e) {
 	}
 });
 
+const totop = document.querySelector(".backToTop");
+
+window.addEventListener("scroll", () =>{
+	if(window.pageYOffset > 100){
+		totop.classList.add("active");
+	} else{
+		totop.classList.remove("active");
+	}	
+});
+
 const setNormalView = (isNormalView) => {
 	if (isNormalView) {
 		document.querySelector('#normal-view').classList.add('selected');

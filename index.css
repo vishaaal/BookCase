@@ -113,12 +113,28 @@ title {
 }
 
 .backToTop {
-  margin-left: 49%;
-
+  background: rgb(224, 224, 224);
+  position: fixed;
+  margin-bottom: 16px;
+  right: 16px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
   color: #d31a1a;
-  padding: 0.6%;
-  border-radius: 50%;
-  margin-bottom: 4%;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .4s;
+}
+
+.backToTop.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
 }
 
 .card {
